@@ -1,0 +1,61 @@
+@import 'variables';
+@import 'mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body, .root, .App, .Layout{
+    width: 100%;
+    min-height: auto;
+    background-color: $color-white;
+    transition: all .5s;
+    position: absolute;
+}
+
+.Aside.active ~ .Container{
+    width: 100%;
+}
+
+.Home, .Discagem, .Feriados, .Cep, .Contato{
+    width: 100%;
+    min-height: 100%;
+    transition: all .5s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 50px 0;
+    position: relative;
+
+    h2{
+        font-size: 1.6em;
+        font-weight: 600;
+        color: $color-black;
+    }
+
+    p{
+        font-size: 1.03em;
+        color: $color-gray;
+        font-weight: 500;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+@media screen and (max-width: 900px){
+    .Aside.Aside.active ~ .Container{
+        width: calc(100% - 300px);
+    }
+
+    .App{
+        .Aside ~ .Container{
+            width: 100%;
+        }
+    }
+}
