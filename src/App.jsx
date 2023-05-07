@@ -8,6 +8,7 @@ import { useState } from "react";
 import { Ddd } from "./Pages/Ddd/Ddd";
 import { Feriados } from "./Pages/Feriados/Feriados";
 import { Cep } from "./Pages/Cep/Cep";
+import { NotFound } from "./Pages/NotFound";
 
 const App = () => {
   const [active, setActive] = useState(false);
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="feriados" element={<Feriados />} />
         <Route path="cep" element={<Cep />} />
         <Route path="contato" element={<Contato />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
