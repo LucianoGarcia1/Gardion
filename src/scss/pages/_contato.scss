@@ -1,0 +1,26 @@
+.contato {
+  width: 100%;
+
+  textarea {
+    max-width: 600px;
+    width: 100%;
+    padding: 1rem 1rem 3rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #222;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #222;
+    outline: none;
+    transition: all 0.2s;
+    resize: none;
+
+    &::placeholder {
+      color: $color-black;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $color-blue;
+    }
+  }
+}

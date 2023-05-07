@@ -1,0 +1,30 @@
+.c-header {
+  width: 100%;
+  background-color: $color-blue;
+  height: 80px;
+  @include flex;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  
+  @media screen and (min-width: 700px){
+    padding: 0 50px;
+  }
+
+  .nav {
+    button {
+      background-color: transparent;
+      border: none;
+      font-size: 2rem;
+      color: $color-white;
+      cursor: pointer;
+      transition: all 0.20s;
+
+      &:hover,
+      &:focus {
+        transform: rotate(30deg);
+      }
+    }
+  }
+}

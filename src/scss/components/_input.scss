@@ -1,0 +1,21 @@
+input {
+  max-width: 600px;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid $color-black;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: $color-black;
+  outline: none;
+  transition: all 0.2s;
+
+  &::placeholder {
+    color: $color-black;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $color-blue;
+  }
+}
