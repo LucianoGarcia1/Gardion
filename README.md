@@ -1,11 +1,20 @@
 # Gardion App
-Gardion é um webapp desenvolvido com intuito de praticar react routes.
+<p>
+  Gardion é um site que tem diversas funcionalidades. Com uma interface intuitiva e agradável, você pode facilmente encontrar informações detalhadas sobre o ddd de uma cidade, cep e datas de feriados nacionais.
+</p>
 
-Fique a vontade para explorar o site e o codigo.
-
-<a href='https://gardion.vercel.app/'>Visualize aqui</a>
+## Funcionalidades
+- Ddd(Informarções)
+- Cep(Consulta por informações)
+- Datas de feriados nacionais
 
 ## Tecnologias utilizadas
 - ReactJS
-- Vanilla Js
-- React Routes
+- Scss
+- EmailJS
+- React Icons
+
+## Contribuições
+<p>
+  Contribuições são bem-vindas! Caso queira contribuir com o Gardion, sinta-se à vontade para abrir uma Pull Request.
+</p>
